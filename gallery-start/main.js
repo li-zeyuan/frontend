@@ -13,7 +13,7 @@ const alts = {
     'pic4.jpg' : 'Section of wall from a pharoah\'s tomb',
     'pic5.jpg' : 'Large moth on a leaf'
   }
-
+/*  */
 /* Declaring the alternative text for each image file */
 /* Looping through images */
 for (const image of images) {
