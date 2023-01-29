@@ -29,7 +29,6 @@ function randomColor() {
 }
 
 // 定义 Shape 构造器
-
 function Shape(x, y, velX, velY, exists) {
   this.x = x;
   this.y = y;
@@ -39,7 +38,6 @@ function Shape(x, y, velX, velY, exists) {
 }
 
 // 定义 Ball 构造器，继承自 Shape
-
 function Ball(x, y, velX, velY, exists, color, size) {
   Shape.call(this, x, y, velX, velY, exists);
 
@@ -51,7 +49,6 @@ Ball.prototype = Object.create(Shape.prototype);
 Ball.prototype.constructor = Ball;
 
 // 定义彩球绘制函数
-
 Ball.prototype.draw = function() {
   ctx.beginPath();
   ctx.fillStyle = this.color;
